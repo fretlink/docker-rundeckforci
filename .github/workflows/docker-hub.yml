@@ -29,5 +29,5 @@ jobs:
         with:
           build-args: "RUNDECK_VERSION=${{ matrix.rundeck_version }}"
           file: Dockerfile
-          load: true
+          push: true
           tags: fretlink/rundeckforci:${{ matrix.rundeck_version }}-latest
